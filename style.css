@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --basic-color:hsla(240, 9%, 89%, 1);
+    --color-articler:hsla(240, 9%, 89%, 1);
+}
+
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav{
+    display: flex;
+    position:absolute;
+    z-index: 2;
+    margin-top:4rem;
+    margin-left: 7.2rem;
+    gap: 3.2rem;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    color: var(--basic-color);
+    transition: color .3s;
+}
+header nav a:hover{
+    color: #7d7b7b;;
+}
+#app{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#background{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.wrapper{
+    position:absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    width: 100%;
+}
+.wrapper a{
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}
+.wrapper h1{
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 125%;
+    color: var(--basic-color);
+}
+
+.text{
+    position:absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    gap: 2.4rem;
+    width: 100%;
+    padding: 10rem;
+}
+.text h1{
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 125%;
+    color: var(--basic-color);
+}
+
+
+article{
+    width: 62.8rem;
+    display: flex;
+}
+article p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 160%; 
+    color: var(--color-articler);
+}
+.wrapper a button{
+    background-color: transparent;
+    border:2px solid var(--basic-color);
+    border-radius: .5rem;
+    font-family: 'Roboto';
+    color: var(--basic-color);
+    margin: 0 auto;
+    width: 19.5rem;
+    height: 4.8rem;
+    transition: all .5s;
+}
+
+.wrapper button:hover{
+    background-color: var(--basic-color);
+    font-weight: bold;
+    color:#0b048c;
+}
